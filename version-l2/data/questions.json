@@ -1,0 +1,222 @@
+[
+  {
+    "id": "t1",
+    "category": "tenses",
+    "label": "Temps et aspects",
+    "question": "Choose the correct form: “By the time we arrived, the film ___.”",
+    "answers": [
+      "has started",
+      "had started",
+      "was starting",
+      "would start"
+    ],
+    "correct": 1,
+    "answersOriginal": [
+      "has started",
+      "had started",
+      "was starting",
+      "would start"
+    ],
+    "explanation": "Le past perfect marque un événement antérieur à un autre événement passé : le film avait commencé avant notre arrivée."
+  },
+  {
+    "id": "t2",
+    "category": "tenses",
+    "label": "Temps et aspects",
+    "question": "Choose the most suitable form: “She ___ in London since 2021.”",
+    "answers": [
+      "lives",
+      "lived",
+      "has lived",
+      "is living"
+    ],
+    "correct": 2,
+    "answersOriginal": [
+      "lives",
+      "lived",
+      "has lived",
+      "is living"
+    ],
+    "explanation": "Le present perfect relie une situation commencée dans le passé à la période présente ; “since” indique le point de départ."
+  },
+  {
+    "id": "t3",
+    "category": "tenses",
+    "label": "Temps et aspects",
+    "question": "Choose the correct form: “I ___ when the phone rang.”",
+    "answers": [
+      "read",
+      "was reading",
+      "have read",
+      "had read"
+    ],
+    "correct": 1,
+    "answersOriginal": [
+      "read",
+      "was reading",
+      "have read",
+      "had read"
+    ],
+    "explanation": "Le past continuous présente une action en cours au moment où survient un événement ponctuel au past simple."
+  },
+  {
+    "id": "m1",
+    "category": "modals",
+    "label": "Modaux",
+    "question": "In “You must be exhausted”, “must” expresses:",
+    "answers": [
+      "an obligation",
+      "a strong deduction",
+      "a permission",
+      "a past habit"
+    ],
+    "correct": 1,
+    "answersOriginal": [
+      "an obligation",
+      "a strong deduction",
+      "a permission",
+      "a past habit"
+    ],
+    "explanation": "Avec un sujet animé et un adjectif décrivant un état, “must” exprime ici une déduction forte : tu dois être épuisé."
+  },
+  {
+    "id": "m2",
+    "category": "modals",
+    "label": "Modaux",
+    "question": "Choose the most appropriate form: “You ___ have told me earlier; I could have helped.”",
+    "answers": [
+      "should",
+      "must",
+      "can",
+      "may"
+    ],
+    "correct": 0,
+    "answersOriginal": [
+      "should",
+      "must",
+      "can",
+      "may"
+    ],
+    "explanation": "“Should have + participe passé” exprime ici un reproche ou un regret concernant une action passée non réalisée."
+  },
+  {
+    "id": "a1",
+    "category": "articles",
+    "label": "Articles",
+    "question": "Choose the correct article: “She plays ___ piano.”",
+    "answers": [
+      "a",
+      "the",
+      "an",
+      "no article"
+    ],
+    "correct": 1,
+    "answersOriginal": [
+      "a",
+      "the",
+      "an",
+      "no article"
+    ],
+    "explanation": "En anglais, les instruments de musique sont généralement précédés de “the” après le verbe “play”."
+  },
+  {
+    "id": "a2",
+    "category": "articles",
+    "label": "Articles",
+    "question": "Choose the correct option: “___ information you gave me was useful.”",
+    "answers": [
+      "A",
+      "An",
+      "The",
+      "No article"
+    ],
+    "correct": 2,
+    "answersOriginal": [
+      "A",
+      "An",
+      "The",
+      "No article"
+    ],
+    "explanation": "“Information” est indénombrable en anglais. Ici, le groupe est défini par la relative “you gave me”, d'où “the”."
+  },
+  {
+    "id": "p1",
+    "category": "prepositions",
+    "label": "Prépositions",
+    "question": "Choose the correct preposition: “She is interested ___ linguistics.”",
+    "answers": [
+      "on",
+      "at",
+      "in",
+      "for"
+    ],
+    "correct": 2,
+    "answersOriginal": [
+      "on",
+      "at",
+      "in",
+      "for"
+    ],
+    "explanation": "La construction idiomatique est “to be interested in something”."
+  },
+  {
+    "id": "p2",
+    "category": "prepositions",
+    "label": "Prépositions",
+    "question": "Choose the correct preposition: “He insisted ___ paying for dinner.”",
+    "answers": [
+      "to",
+      "on",
+      "for",
+      "about"
+    ],
+    "correct": 1,
+    "answersOriginal": [
+      "to",
+      "on",
+      "for",
+      "about"
+    ],
+    "explanation": "On emploie “insist on” suivi d'un nom ou d'un verbe en -ing."
+  },
+  {
+    "id": "f1",
+    "category": "false-friends",
+    "label": "Faux amis",
+    "question": "In the sentence “I eventually found my keys”, “eventually” means:",
+    "answers": [
+      "éventuellement",
+      "finalement",
+      "actuellement",
+      "fréquemment"
+    ],
+    "correct": 1,
+    "answersOriginal": [
+      "éventuellement",
+      "finalement",
+      "actuellement",
+      "fréquemment"
+    ],
+    "explanation": "“Eventually” signifie “finalement” ou “à terme”, et non “éventuellement”."
+  },
+  {
+    "id": "f2",
+    "category": "false-friends",
+    "label": "Faux amis",
+    "question": "In “The issue is quite sensible”, “sensible” means:",
+    "answers": [
+      "sensible, émotif",
+      "raisonnable, sensé",
+      "sensitive au toucher",
+      "sensationnel"
+    ],
+    "correct": 1,
+    "answersOriginal": [
+      "sensible, émotif",
+      "raisonnable, sensé",
+      "sensitive au toucher",
+      "sensationnel"
+    ],
+    "explanation": "L'anglais “sensible” signifie “raisonnable” ou “sensé”. Le français “sensible” se traduit souvent par “sensitive”."
+  }
+]
