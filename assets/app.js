@@ -1,99 +1,89 @@
-let allQuestions = [];
-let quizQuestions = [];
-let currentIndex = 0;
+
+let bank = [];
+let questions = [];
+let current = 0;
 let answers = [];
+let selected = null;
+let labels = {};
+const $ = (id) => document.getElementById(id);
 
-const area = document.getElementById("quiz-area");
-const categorySelect = document.getElementById("category");
-const countSelect = document.getElementById("question-count");
-
-fetch("data/questions.json")
-  .then(response => {
-    if (!response.ok) throw new Error("Impossible de charger la banque de questions.");
-    return response.json();
-  })
-  .then(data => { allQuestions = data; })
-  .catch(() => {
-    area.innerHTML = "<h3>Banque de questions indisponible</h3><p>Vérifiez que le fichier data/questions.json est bien présent.</p>";
-  });
-
-function shuffle(items) {
-  const copy = [...items];
-  for (let i = copy.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [copy[i], copy[j]] = [copy[j], copy[i]];
-  }
-  return copy;
+async function init(){
+  const response = await fetch('data/questions.json');
+  const data = await response.json();
+  bank = data.questions;
+  data.categories.forEach(c => labels[c.id] = c.name);
+  renderDefinitions(data.categories);
 }
-
-document.getElementById("start-quiz").addEventListener("click", () => {
-  const category = categorySelect.value;
-  const count = Number(countSelect.value);
-  const pool = category === "all" ? allQuestions : allQuestions.filter(q => q.category === category);
-  if (!pool.length) {
-    area.innerHTML = "<h3>Aucune question disponible</h3><p>Cette catégorie sera alimentée prochainement.</p>";
-    return;
-  }
-  quizQuestions = shuffle(pool).slice(0, Math.min(count, pool.length)).map(q => ({
-    ...q,
-    answers: shuffle(q.answers.map((answer, index) => ({ text: answer, originalIndex: index })))
-  }));
-  currentIndex = 0;
-  answers = Array(quizQuestions.length).fill(null);
+function renderDefinitions(categories){
+  $('definitions').innerHTML = categories.map(c => `
+    <article class="definition-card">
+      <h3>${escapeHtml(c.name)}</h3>
+      <p>${escapeHtml(c.definition)}</p>
+      <div class="example"><p><strong>Anglais :</strong> <em>${escapeHtml(c.example_en)}</em></p><p><strong>Français :</strong> ${escapeHtml(c.example_fr)}</p></div>
+      <p class="explanation">${escapeHtml(c.explanation)}</p>
+    </article>`).join('');
+}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function shuffle(a){const x=[...a];for(let i=x.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[x[i],x[j]]=[x[j],x[i]];}return x;}
+function startQuiz(){
+  const count = $('question-count').value;
+  questions = shuffle(bank).slice(0, count==='all'?bank.length:Number(count));
+  answers = Array(questions.length).fill(null); current=0; selected=null;
+  $('results').hidden=true; $('quiz').hidden=false;
   renderQuestion();
-});
-
-function renderQuestion() {
-  const q = quizQuestions[currentIndex];
-  area.innerHTML = `
-    <div class="quiz-question">
-      <div class="quiz-topline"><span>Question ${currentIndex + 1} / ${quizQuestions.length}</span><span>${escapeHtml(q.label || "Entraînement")}</span></div>
-      <h3>${escapeHtml(q.question)}</h3>
-      <div class="answer-list">
-        ${q.answers.map((a, i) => `<label class="answer-option"><input type="radio" name="answer" value="${a.originalIndex}" ${answers[currentIndex] === a.originalIndex ? "checked" : ""}><span>${String.fromCharCode(65+i)}. ${escapeHtml(a.text)}</span></label>`).join("")}
-      </div>
-      <div class="quiz-nav">
-        <button class="button button-secondary" id="previous" ${currentIndex === 0 ? "disabled" : ""}>Précédent</button>
-        <button class="button button-primary" id="next">${currentIndex === quizQuestions.length - 1 ? "Voir la correction" : "Suivant"}</button>
-      </div>
-    </div>`;
-  area.querySelectorAll('input[name="answer"]').forEach(input => {
-    input.addEventListener("change", event => { answers[currentIndex] = Number(event.target.value); });
-  });
-  document.getElementById("previous").addEventListener("click", () => { currentIndex--; renderQuestion(); });
-  document.getElementById("next").addEventListener("click", () => {
-    if (answers[currentIndex] === null) {
-      const notice = document.createElement("p");
-      notice.className = "small muted";
-      notice.textContent = "Choisissez une réponse avant de continuer.";
-      area.querySelector(".quiz-nav").before(notice);
-      return;
-    }
-    if (currentIndex < quizQuestions.length - 1) { currentIndex++; renderQuestion(); }
-    else renderResults();
-  });
+  $('quiz').scrollIntoView({behavior:'smooth',block:'start'});
 }
-
-function renderResults() {
-  const score = quizQuestions.reduce((sum, q, i) => sum + (answers[i] === q.correct ? 1 : 0), 0);
-  const reviews = quizQuestions.map((q, i) => {
-    const correct = answers[i] === q.correct;
-    return `<article class="review-item"><strong>${i+1}. ${escapeHtml(q.question)}</strong><span class="${correct ? "good" : "bad"}">${correct ? "Bonne réponse" : "Réponse à revoir"}</span><p>Réponse attendue : <b>${escapeHtml(q.answersOriginal[q.correct])}</b></p><p>${escapeHtml(q.explanation)}</p></article>`;
-  }).join("");
-  area.innerHTML = `
-    <div class="quiz-question">
-      <div class="eyebrow">Résultat de votre entraînement</div>
-      <h3>QCM terminé</h3>
-      <div class="result-score">${score} / ${quizQuestions.length}</div>
-      <p class="muted">Les réponses et explications sont détaillées ci-dessous. Ce résultat reste uniquement dans cette page.</p>
-      <div class="review-list">${reviews}</div>
-      <div class="quiz-nav"><button class="button button-primary" id="restart">Recommencer avec un nouveau tirage</button></div>
-    </div>`;
-  document.getElementById("restart").addEventListener("click", () => document.getElementById("start-quiz").click());
+function renderQuestion(){
+  const q=questions[current]; selected=answers[current];
+  $('progress').textContent=`Question ${current+1} / ${questions.length}`;
+  $('answered-count').textContent=`${answers.filter(a=>a!==null).length} réponse(s) enregistrée(s)`;
+  $('progress-bar').style.width=`${(current/questions.length)*100}%`;
+  $('question-content').innerHTML=`
+    <p class="question-label">Identifiez le procédé de traduction</p>
+    <div class="translation-box">
+        <p class="english">${escapeHtml(q.english)}</p>
+        <p class="french">${escapeHtml(q.french)}</p>
+    </div>
+    <div class="answers">${shuffle(Object.keys(labels)).map((id,i)=>`
+      <button class="answer ${selected===id?'selected':''}" data-id="${id}">
+        <span class="letter">${String.fromCharCode(65+i)}</span><span>${escapeHtml(labels[id])}</span>
+      </button>`).join('')}</div>`;
+  document.querySelectorAll('.answer').forEach(btn=>btn.addEventListener('click',()=>{
+    selected=btn.dataset.id; answers[current]=selected;
+    document.querySelectorAll('.answer').forEach(b=>b.classList.toggle('selected',b===btn));
+    $('next-question').disabled=false;
+    $('next-question').textContent=current===questions.length-1?'Voir la correction':'Question suivante';
+    $('answered-count').textContent=`${answers.filter(a=>a!==null).length} réponse(s) enregistrée(s)`;
+  }));
+  $('next-question').disabled=selected===null;
+  $('next-question').textContent=current===questions.length-1?'Voir la correction':'Question suivante';
 }
-
-function escapeHtml(value) {
-  return String(value).replace(/[&<>"']/g, char => ({
-    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;"
-  })[char]);
+function nextQuestion(){
+  if(answers[current]===null)return;
+  if(current<questions.length-1){current++;renderQuestion();}
+  else showResults();
 }
+function showResults(){
+  const score=questions.reduce((n,q,i)=>n+(answers[i]===q.correct?1:0),0);
+  $('quiz').hidden=true;$('results').hidden=false;
+  $('results').innerHTML=`
+    <p class="eyebrow">Correction finale</p><h2>Résultat</h2>
+    <p class="score">${score} / ${questions.length}</p>
+    <p>${Math.round(score/questions.length*100)} % de bonnes réponses</p>
+    <h3>Correction détaillée</h3>
+    ${questions.map((q,i)=>{const ok=answers[i]===q.correct;return `
+      <article class="review-item">
+        <h4>${i+1}. ${escapeHtml(q.english)}</h4>
+        <p>${escapeHtml(q.french)}</p>
+        <p class="${ok?'correct-text':'incorrect-text'}"><strong>${ok?'Bonne réponse':'Réponse incorrecte'}</strong> — ${escapeHtml(labels[q.correct])}</p>
+        ${!ok?`<p>Votre réponse : ${escapeHtml(labels[answers[i]]||'Aucune réponse')}</p>`:''}
+        <p class="explanation">${escapeHtml(q.explanation)}</p>
+      </article>`}).join('')}
+    <button id="restart" class="button">Recommencer avec un nouveau tirage</button>`;
+  $('progress-bar').style.width='100%';
+  $('restart').addEventListener('click',startQuiz);
+  $('results').scrollIntoView({behavior:'smooth',block:'start'});
+}
+$('start-quiz').addEventListener('click',startQuiz);
+$('next-question').addEventListener('click',nextQuestion);
+init().catch(()=>{$('definitions').textContent="Impossible de charger le cours. Vérifiez que le site est ouvert depuis son hébergement ou un serveur local.";});

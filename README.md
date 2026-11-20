@@ -1,43 +1,26 @@
-# Atelier de version anglaise — L2
+# Atelier de version anglaise — Procédés de traduction
 
-Site pédagogique statique en français, conçu pour GitHub Pages.
+Cette version remplace le contenu de démonstration par le cours sur quatre procédés de traduction.
 
-## Fonctionnalités du prototype
-- Pages de cours en HTML.
-- Banque de QCM dans `data/questions.json`.
-- Tirage aléatoire des questions et mélange des propositions.
-- Correction et explications à la fin du QCM.
-- Aucun compte, serveur, cookie ou stockage des résultats.
+## Contenu
+- Définitions et exemples des quatre procédés.
+- Banque de 58 paires anglais-français.
+- QCM : chaque question présente la phrase anglaise et sa traduction française ; l'étudiant identifie le procédé.
+- Tirage aléatoire des questions et mélange des quatre réponses.
+- Correction détaillée à la fin.
+- Aucun compte étudiant, aucun enregistrement des scores.
 
-## Publier gratuitement avec GitHub Pages
-1. Créez un dépôt GitHub public, par exemple `version-l2`.
-2. Téléversez le contenu de ce dossier à la racine du dépôt.
-3. Dans **Settings → Pages**, choisissez **Deploy from a branch**.
-4. Sélectionnez la branche `main` et le dossier `/ (root)`, puis enregistrez.
-5. GitHub publiera le site à l'adresse `https://VOTRE-NOM.github.io/version-l2/`.
+## Publication sur GitHub Pages
+1. Décompressez l'archive.
+2. Dans le dépôt GitHub destiné au site, remplacez les anciens fichiers par ceux de ce dossier (en conservant la structure).
+3. Dans Settings > Pages, vérifiez que la source est `Deploy from a branch`, branche `main`, dossier `/ (root)`.
+4. Attendez la publication puis rechargez le site.
 
-## Ajouter des questions
-Modifiez `data/questions.json`. Chaque question doit comporter :
-- `id` : identifiant unique ;
-- `category` : `tenses`, `modals`, `articles`, `prepositions` ou `false-friends` ;
-- `label` : intitulé affiché ;
-- `question` : énoncé ;
-- `answers` : exactement quatre propositions ;
-- `correct` : index de la bonne réponse, de 0 à 3 ;
-- `answersOriginal` : les quatre propositions dans leur ordre d'origine ;
-- `explanation` : explication affichée dans le corrigé.
+## Modifier ou enrichir la banque
+Ouvrez `data/questions.json`. Chaque question comprend :
+- `category` : `explicitation`, `modulation`, `transposition` ou `chasse-croise`
+- `english` : phrase source
+- `french` : traduction
+- `correct` : identifiant du procédé attendu
 
-Pour ajouter une catégorie, ajoutez aussi une option dans le menu `#category` de `index.html`.
-
-## Tester en local
-Pour que le navigateur puisse charger le fichier JSON, lancez un petit serveur local depuis ce dossier :
-`python -m http.server 8000`
-Puis ouvrez `http://localhost:8000`.
-
-## À compléter avant diffusion
-- Remplacer les questions de démonstration par vos questions relues et validées.
-- Compléter les fiches de cours.
-- Ajouter vos mentions de cours / contact si nécessaire.
-- Vérifier les traductions et explications avec vos supports de TD.
-
-Le site ne collecte aucun résultat. Les réponses sont conservées uniquement en mémoire pendant la session du navigateur.
+Les exemples et leur classement reprennent le contenu fourni. Il est recommandé de relire les classifications et formulations avant diffusion aux étudiants.

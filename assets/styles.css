@@ -1,2 +1,459 @@
-:root{--ink:#202b3c;--muted:#687487;--line:#e1e6ed;--paper:#fff;--wash:#f5f7fa;--navy:#193653;--accent:#a45c38;--accent-dark:#82472b;--serif:Georgia,"Times New Roman",serif;--sans:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.6}.site-header{border-bottom:1px solid var(--line);background:#fff}.header-inner,.footer-inner{max-width:1120px;margin:auto;padding:15px 28px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}.brand-mark{width:42px;height:42px;display:grid;place-items:center;background:var(--navy);color:#fff;font-family:var(--serif);font-weight:bold;border-radius:4px}.brand strong,.brand small{display:block}.brand small{font-size:12px;color:var(--muted)}nav{display:flex;gap:28px}nav a,.text-link{font-size:14px;color:#455267;text-decoration:none}nav a:hover,.text-link:hover{color:var(--accent)}main{max-width:1120px;margin:auto;padding:0 28px}.hero{padding:76px 0 66px;max-width:780px}.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:11px;font-weight:750;color:var(--accent)}h1,h2,h3,p{margin-top:0}h1{font:normal clamp(42px,6vw,66px)/1.08 var(--serif);letter-spacing:-.035em;margin:15px 0 20px;color:var(--navy)}h1 em{color:var(--accent);font-style:italic}.hero-lead{font:19px/1.65 var(--serif);color:#526075;max-width:690px;margin-bottom:28px}.hero-actions{display:flex;align-items:center;gap:25px;flex-wrap:wrap}.button{border:0;border-radius:4px;padding:12px 18px;font-weight:650;font-size:14px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:12px}.button-primary{background:var(--navy);color:#fff}.button-primary:hover{background:#274d70}.hero-note{margin-top:27px;color:var(--muted);font-size:12px}.status-dot{display:inline-block;width:7px;height:7px;background:#4b9871;border-radius:50%;margin-right:7px}.section{padding:48px 0 60px;border-top:1px solid var(--line)}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:26px}.section-heading h2{font:normal 34px/1.2 var(--serif);color:var(--navy);margin:7px 0 0}.section-heading>p{max-width:390px;color:var(--muted);font-size:14px;margin:0 0 3px}.course-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.course-card{border:1px solid var(--line);border-radius:5px;padding:20px;display:flex;gap:17px;min-height:150px}.course-number{font:22px var(--serif);color:#b5bdc8}.course-card h3,.method-grid h3{font:20px var(--serif);color:var(--navy);margin:0 0 7px}.course-card p,.method-grid p{font-size:13px;color:var(--muted);margin-bottom:12px}.course-card a{font-size:12px;font-weight:700;color:var(--accent);text-decoration:none}.course-card a span{padding-left:5px}.practice-section{background:var(--wash);margin:0 -28px;padding:50px 28px 62px}.quiz-panel{background:#fff;border:1px solid var(--line);border-radius:6px;display:grid;grid-template-columns:270px 1fr;min-height:310px;overflow:hidden}.quiz-controls{padding:25px;border-right:1px solid var(--line);display:flex;flex-direction:column;align-items:stretch;gap:9px}.quiz-controls label{font-size:12px;font-weight:700;color:#465368;margin-top:4px}.quiz-controls select{width:100%;padding:10px;border:1px solid #d8dee7;border-radius:4px;background:#fff;color:var(--ink);font:14px var(--sans)}.full-width{width:100%;margin-top:9px}.small{font-size:11px;line-height:1.5}.muted{color:var(--muted)}.quiz-intro{padding:34px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}.quiz-icon{width:44px;height:44px;border-radius:50%;background:#f4eae4;color:var(--accent);display:grid;place-items:center;font:22px var(--serif);margin-bottom:16px}.quiz-intro h3{font:25px var(--serif);color:var(--navy);margin-bottom:8px}.quiz-intro p{color:var(--muted);font-size:14px;max-width:570px}.quiz-question{width:100%}.quiz-topline{display:flex;justify-content:space-between;color:var(--muted);font-size:12px;margin-bottom:16px}.quiz-question h3{font:23px/1.35 var(--serif);color:var(--navy);margin-bottom:18px}.answer-list{display:grid;gap:9px}.answer-option{display:flex;gap:12px;align-items:flex-start;padding:12px;border:1px solid var(--line);border-radius:4px;cursor:pointer;font-size:14px}.answer-option:has(input:checked){border-color:var(--accent);background:#fcf8f5}.answer-option input{margin-top:5px;accent-color:var(--accent)}.quiz-nav{display:flex;justify-content:space-between;gap:10px;margin-top:22px}.button-secondary{background:#edf0f4;color:var(--ink)}.button:disabled{opacity:.45;cursor:not-allowed}.result-score{font:48px var(--serif);color:var(--accent);margin:8px 0}.review-list{width:100%;display:grid;gap:12px;margin-top:15px}.review-item{padding:13px;border:1px solid var(--line);border-radius:4px;font-size:13px}.review-item strong{display:block;color:var(--navy);margin-bottom:5px}.review-item .good{color:#28734e}.review-item .bad{color:#a34535}.method-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.method-grid article{border-top:2px solid #c9d1dc;padding-top:15px}.method-grid article>span{font-size:11px;color:var(--accent);font-weight:750}.method-grid h3{margin-top:10px}footer{border-top:1px solid var(--line);background:#fafbfd}.footer-inner{font-size:12px;color:var(--muted)}.footer-inner strong{color:var(--navy)}@media(max-width:700px){.header-inner{align-items:flex-start;flex-direction:column}.header-inner nav{gap:17px;flex-wrap:wrap}.hero{padding:52px 0}.section-heading{display:block}.section-heading>p{margin-top:12px}.course-grid{grid-template-columns:1fr}.quiz-panel{grid-template-columns:1fr}.quiz-controls{border-right:0;border-bottom:1px solid var(--line)}.method-grid{grid-template-columns:repeat(2,1fr)}.footer-inner{align-items:flex-start;flex-direction:column;gap:5px}}@media(max-width:420px){main{padding:0 18px}.header-inner,.footer-inner{padding-left:18px;padding-right:18px}.practice-section{margin:0 -18px;padding-left:18px;padding-right:18px}.method-grid{grid-template-columns:1fr 1fr}.quiz-intro{padding:24px}}
+
+/* ========================================
+   1. VARIABLES GLOBALES
+======================================== */
+
+:root {
+    --ink: #202b3a;
+    --muted: #657184;
+    --line: #dce2e9;
+    --paper: #fff;
+    --wash: #f4f6f8;
+    --accent: #243f60;
+    --accent-soft: #e9eff5;
+    --good: #216443;
+    --bad: #9b3030;
+}
+
+
+/* ========================================
+   2. BASE ET CONFIGURATION GÉNÉRALE
+======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--wash);
+    color: var(--ink);
+    font: 16px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.container {
+    width: min(100% - 36px, 1000px);
+    margin: auto;
+}
+
+
+/* ========================================
+   3. EN-TÊTE ET NAVIGATION
+======================================== */
+
+.site-header {
+    background: #fff;
+    border-bottom: 1px solid var(--line);
+}
+
+.header-inner {
+    min-height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.brand {
+    font-weight: 700;
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.site-header nav {
+    display: flex;
+    gap: 22px;
+}
+
+.site-header nav a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: .94rem;
+}
+
+.site-header nav a:hover {
+    color: var(--accent);
+}
+
+
+/* ========================================
+   4. SECTION INTRODUCTIVE
+======================================== */
+
+.intro {
+    padding: 66px 0 58px;
+    max-width: 760px;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    font-size: .75rem;
+    font-weight: 700;
+    color: var(--muted);
+    margin: 0 0 8px;
+}
+
+.intro h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(2.2rem, 6vw, 3.6rem);
+    line-height: 1.1;
+    margin: 0 0 16px;
+    color: var(--accent);
+}
+
+.intro > p:not(.eyebrow) {
+    font-size: 1.12rem;
+    color: var(--muted);
+    max-width: 650px;
+}
+
+
+/* ========================================
+   5. BOUTONS ET LIENS PRINCIPAUX
+======================================== */
+
+.primary-link,
+.button {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    padding: 11px 18px;
+    text-decoration: none;
+    font: 600 .95rem system-ui;
+    cursor: pointer;
+}
+
+.primary-link {
+    margin-top: 12px;
+}
+
+.button:disabled {
+    opacity: .45;
+    cursor: not-allowed;
+}
+
+
+/* ========================================
+   6. SECTIONS ET TITRES
+======================================== */
+
+.section {
+    padding: 34px 0 58px;
+}
+
+.section-heading {
+    margin-bottom: 22px;
+}
+
+.section-heading h2 {
+    font: 700 2rem/1.2 Georgia, serif;
+    color: var(--accent);
+    margin: 0 0 8px;
+}
+
+.section-heading p:last-child {
+    color: var(--muted);
+    margin: 0;
+}
+
+
+/* ========================================
+   7. CARTES DE DÉFINITION
+======================================== */
+
+.definition-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.definition-card,
+.quiz-card,
+.results-card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 22px;
+}
+
+.definition-card h3 {
+    font: 700 1.25rem Georgia, serif;
+    color: var(--accent);
+    margin: 0 0 10px;
+}
+
+.definition-card p {
+    margin: 0 0 14px;
+    text-align: justify;
+}
+
+.example {
+    background: var(--wash);
+    border-left: 3px solid #8da2b8;
+    padding: 12px 14px;
+    border-radius: 0 5px 5px 0;
+}
+
+.example p {
+    margin: 3px 0;
+}
+
+.explanation {
+    font-size: .93rem;
+    color: var(--muted);
+    margin-top: 10px !important;
+}
+
+
+/* ========================================
+   8. SECTION QUIZ
+======================================== */
+
+.quiz-section {
+    border-top: 1px solid var(--line);
+}
+
+.quiz-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.quiz-controls label {
+    font-weight: 600;
+}
+
+.quiz-controls select {
+    padding: 10px 12px;
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    background: white;
+    color: var(--ink);
+    font: inherit;
+}
+
+.quiz-card {
+    max-width: 780px;
+}
+
+
+/* ========================================
+   9. PROGRESSION DU QUIZ
+======================================== */
+
+.quiz-topline {
+    display: flex;
+    justify-content: space-between;
+    color: var(--muted);
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.progress-track {
+    height: 6px;
+    background: var(--wash);
+    border-radius: 10px;
+    margin: 12px 0 24px;
+    overflow: hidden;
+}
+
+.progress-track div {
+    height: 100%;
+    width: 0;
+    background: var(--accent);
+    transition: width .2s;
+}
+
+
+/* ========================================
+   10. AFFICHAGE DES QUESTIONS
+======================================== */
+
+.question-label {
+    font-size: .78rem;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: var(--muted);
+    font-weight: 700;
+}
+
+.translation-box {
+    background: var(--accent-soft);
+    border-left: 4px solid var(--accent);
+    border-radius: 6px;
+    padding: 20px 22px;
+    margin: 18px 0 24px;
+}
+
+.english {
+    font-family: Georgia, serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 0 0 8px;
+    color: var(--ink);
+}
+
+.french {
+    font-family: Georgia, serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--muted);
+    margin: 0;
+}
+
+
+/* ========================================
+   11. RÉPONSES ET SÉLECTION
+======================================== */
+
+.answers {
+    display: grid;
+    gap: 10px;
+}
+
+.answer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-align: left;
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 12px 14px;
+    color: var(--ink);
+    font: inherit;
+    cursor: pointer;
+}
+
+.answer:hover {
+    border-color: #879bb0;
+    background: #f8fafc;
+}
+
+.answer.selected {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+}
+
+.answer .letter {
+    display: grid;
+    place-items: center;
+    flex: 0 0 27px;
+    height: 27px;
+    border-radius: 50%;
+    background: var(--wash);
+    font-weight: 700;
+    font-size: .85rem;
+}
+
+
+/* ========================================
+   12. ACTIONS DU QUIZ
+======================================== */
+
+.quiz-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 22px;
+}
+
+
+/* ========================================
+   13. RÉSULTATS ET CORRECTION
+======================================== */
+
+.results-card {
+    max-width: 780px;
+    margin-top: 18px;
+}
+
+.score {
+    font: 700 2rem Georgia, serif;
+    color: var(--accent);
+}
+
+.review-item {
+    border-top: 1px solid var(--line);
+    padding: 14px 0;
+}
+
+.review-item h4 {
+    margin: 0 0 6px;
+}
+
+.review-item p {
+    margin: 3px 0;
+}
+
+.correct-text {
+    color: var(--good);
+}
+
+.incorrect-text {
+    color: var(--bad);
+}
+
+
+/* ========================================
+   14. PIED DE PAGE
+======================================== */
+
+footer {
+    border-top: 1px solid var(--line);
+    padding: 24px 0;
+    color: var(--muted);
+    font-size: .9rem;
+}
+
+
+/* ========================================
+   15. RESPONSIVE : TABLETTES ET MOBILES
+======================================== */
+
+@media (max-width: 680px) {
+
+    .header-inner {
+        align-items: flex-start;
+        padding: 14px 0;
+        flex-direction: column;
+    }
+
+    .site-header nav {
+        gap: 16px;
+    }
+
+    .intro {
+        padding: 46px 0;
+    }
+
+    .definition-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .definition-card,
+    .quiz-card,
+    .results-card {
+        padding: 18px;
+    }
+
+    .quiz-controls {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .quiz-controls select,
+    .quiz-controls .button {
+        width: 100%;
+    }
+}

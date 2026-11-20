@@ -3,103 +3,68 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Ressources et entraînement à la version anglaise — Licence 2.">
-  <title>Atelier de version anglaise — L2</title>
+  <meta name="description" content="Cours et entraînement à l'identification des procédés de traduction.">
+  <title>Atelier de version anglaise — Procédés de traduction</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="brand" href="index.html" aria-label="Accueil">
-        <span class="brand-mark">L2</span>
-        <span><strong>Atelier de version</strong><small>Anglais · Licence 2</small></span>
-      </a>
-      <nav aria-label="Navigation principale">
-        <a href="#cours">Cours</a>
-        <a href="#entrainement">Entraînement</a>
-        <a href="#methode">Méthodologie</a>
-      </nav>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">Atelier de version anglaise</a>
+    <nav aria-label="Navigation principale">
+      <a href="#cours">Le cours</a>
+      <a href="#entrainement">Entraînement</a>
+    </nav>
+  </div>
+</header>
+<main class="container">
+  <section class="intro">
+    <p class="eyebrow">Licence 2 · Version anglaise</p>
+    <h1>Les procédés de traduction</h1>
+    <p>Aucun trafic ni résultat n'est enregistré</p>
+    <a class="primary-link" href="#entrainement">Commencer le QCM</a>
+  </section>
+
+  <section id="cours" class="section">
+    <div class="section-heading">
+      <p class="eyebrow">Fiche de cours</p>
+      <h2>Quelques définitions</h2>
     </div>
-  </header>
+    <div id="definitions" class="definition-grid"></div>
+  </section>
 
-  <main>
-    <section class="hero">
-      <div class="eyebrow">Ressources pédagogiques · L2 anglais</div>
-      <h1>Atelier de <em>version</em> anglaise</h1>
-      <p class="hero-lead">Des ressources pour comprendre les structures de l’anglais, affiner vos choix de traduction et vous entraîner à votre rythme.</p>
-      <div class="hero-actions">
-        <a class="button button-primary" href="#entrainement">Commencer un QCM</a>
-        <a class="text-link" href="#cours">Consulter les cours <span aria-hidden="true">→</span></a>
+  <section id="entrainement" class="section quiz-section">
+    <div class="section-heading">
+      <p class="eyebrow">Mise en pratique</p>
+      <h2>Entraînement</h2>
+      <p>Pour chaque paire, identifiez le procédé utilisé dans la traduction.</p>
+    </div>
+    <div class="quiz-controls">
+      <label for="question-count">Nombre de questions</label>
+      <select id="question-count">
+        <option value="5">5 questions</option>
+        <option value="10">10 questions</option>
+        <option value="15">15 questions</option>
+        <option value="20">20 questions</option>
+        <option value="all">Toutes les questions (58)</option>
+      </select>
+      <button id="start-quiz" class="button">Commencer le QCM</button>
+    </div>
+    <div id="quiz" class="quiz-card" hidden>
+      <div class="quiz-topline">
+        <span id="progress">Question 1</span>
+        <span id="answered-count"></span>
       </div>
-      <div class="hero-note"><span class="status-dot"></span> Entraînement libre · Sans compte · Sans note enregistrée
+      <div class="progress-track"><div id="progress-bar"></div></div>
+      <div id="question-content"></div>
+      <div class="quiz-actions">
+        <button id="next-question" class="button" disabled>Question suivante</button>
       </div>
-    </section>
-
-    <section class="section" id="cours">
-      <div class="section-heading">
-        <div><div class="eyebrow">01 · Ressources</div><h2>Cours et notions</h2></div>
-        <p>Des fiches synthétiques à consulter avant ou après les séances.</p>
-      </div>
-      <div class="course-grid" id="course-list">
-        <article class="course-card"><span class="course-number">01</span><div><h3>Les temps et les aspects</h3><p>Repérer les valeurs temporelles et aspectuelles avant de traduire.</p><a href="cours/temps-aspects.html">Ouvrir la fiche <span>→</span></a></div></article>
-        <article class="course-card"><span class="course-number">02</span><div><h3>Les modaux</h3><p>Nuancer obligation, possibilité, probabilité et point de vue.</p><a href="cours/modaux.html">Ouvrir la fiche <span>→</span></a></div></article>
-        <article class="course-card"><span class="course-number">03</span><div><h3>Articles et déterminants</h3><p>Interpréter la référence et choisir entre article défini, indéfini ou absence d’article.</p><a href="cours/articles.html">Ouvrir la fiche <span>→</span></a></div></article>
-        <article class="course-card"><span class="course-number">04</span><div><h3>Prépositions et constructions</h3><p>Identifier les régimes verbaux et les relations exprimées.</p><a href="cours/prepositions.html">Ouvrir la fiche <span>→</span></a></div></article>
-        <article class="course-card"><span class="course-number">05</span><div><h3>Faux amis et lexique</h3><p>Éviter les calques et choisir le sens adapté au contexte.</p><a href="cours/faux-amis.html">Ouvrir la fiche <span>→</span></a></div></article>
-        <article class="course-card"><span class="course-number">06</span><div><h3>Méthodologie de la version</h3><p>Analyser, traduire, réviser et justifier ses choix.</p><a href="#methode">Consulter les repères <span>→</span></a></div></article>
-      </div>
-    </section>
-
-    <section class="section practice-section" id="entrainement">
-      <div class="section-heading">
-        <div><div class="eyebrow">02 · Entraînement autonome</div><h2>Choisir un QCM</h2></div>
-        <p>Les questions sont tirées au sort dans une banque. La correction apparaît à la fin du test.</p>
-      </div>
-      <div class="quiz-panel">
-        <div class="quiz-controls">
-          <label for="category">Thématique</label>
-          <select id="category">
-            <option value="all">Révision générale</option>
-            <option value="tenses">Temps et aspects</option>
-            <option value="modals">Modaux</option>
-            <option value="articles">Articles</option>
-            <option value="prepositions">Prépositions</option>
-            <option value="false-friends">Faux amis</option>
-          </select>
-          <label for="question-count">Nombre de questions</label>
-          <select id="question-count">
-            <option value="5">5 questions</option>
-            <option value="10" selected>10 questions</option>
-            <option value="15">15 questions</option>
-            <option value="20">20 questions</option>
-          </select>
-          <button class="button button-primary full-width" id="start-quiz">Lancer le QCM <span aria-hidden="true">→</span></button>
-          <p class="small muted">Chaque tentative génère une nouvelle sélection et un nouvel ordre de réponses.</p>
-        </div>
-        <div class="quiz-intro" id="quiz-area" aria-live="polite">
-          <div class="quiz-icon">Q.</div>
-          <h3>À vous de jouer</h3>
-          <p>Sélectionnez une thématique et le nombre de questions, puis lancez le QCM. Votre score s’affichera à la fin ; il n’est ni transmis ni sauvegardé.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section method-section" id="methode">
-      <div class="section-heading">
-        <div><div class="eyebrow">03 · Démarche</div><h2>Quelques réflexes de traduction</h2></div>
-      </div>
-      <div class="method-grid">
-        <article><span>01</span><h3>Observer</h3><p>Repérez les temps, les constructions, les connecteurs et les éléments qui structurent la phrase.</p></article>
-        <article><span>02</span><h3>Interpréter</h3><p>Déterminez le sens en contexte avant de chercher un équivalent français.</p></article>
-        <article><span>03</span><h3>Reformuler</h3><p>Produisez un français idiomatique sans ajouter ni supprimer d’information.</p></article>
-        <article><span>04</span><h3>Réviser</h3><p>Relisez la cohérence des temps, les accords, le registre et la fluidité.</p></article>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-inner"><strong>Atelier de version · L2</strong><span>Ressources d’entraînement en accès libre.</span></div>
-  </footer>
-  <script src="assets/app.js"></script>
+    </div>
+    <div id="results" class="results-card" hidden></div>
+  </section>
+</main>
+<footer><div class="container">Atelier de version anglaise · Ressource pédagogique d'entraînement</div></footer>
+<script src="assets/app.js"></script>
 </body>
 </html>
