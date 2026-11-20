@@ -1,222 +1,502 @@
-[
-  {
-    "id": "t1",
-    "category": "tenses",
-    "label": "Temps et aspects",
-    "question": "Choose the correct form: “By the time we arrived, the film ___.”",
-    "answers": [
-      "has started",
-      "had started",
-      "was starting",
-      "would start"
-    ],
-    "correct": 1,
-    "answersOriginal": [
-      "has started",
-      "had started",
-      "was starting",
-      "would start"
-    ],
-    "explanation": "Le past perfect marque un événement antérieur à un autre événement passé : le film avait commencé avant notre arrivée."
-  },
-  {
-    "id": "t2",
-    "category": "tenses",
-    "label": "Temps et aspects",
-    "question": "Choose the most suitable form: “She ___ in London since 2021.”",
-    "answers": [
-      "lives",
-      "lived",
-      "has lived",
-      "is living"
-    ],
-    "correct": 2,
-    "answersOriginal": [
-      "lives",
-      "lived",
-      "has lived",
-      "is living"
-    ],
-    "explanation": "Le present perfect relie une situation commencée dans le passé à la période présente ; “since” indique le point de départ."
-  },
-  {
-    "id": "t3",
-    "category": "tenses",
-    "label": "Temps et aspects",
-    "question": "Choose the correct form: “I ___ when the phone rang.”",
-    "answers": [
-      "read",
-      "was reading",
-      "have read",
-      "had read"
-    ],
-    "correct": 1,
-    "answersOriginal": [
-      "read",
-      "was reading",
-      "have read",
-      "had read"
-    ],
-    "explanation": "Le past continuous présente une action en cours au moment où survient un événement ponctuel au past simple."
-  },
-  {
-    "id": "m1",
-    "category": "modals",
-    "label": "Modaux",
-    "question": "In “You must be exhausted”, “must” expresses:",
-    "answers": [
-      "an obligation",
-      "a strong deduction",
-      "a permission",
-      "a past habit"
-    ],
-    "correct": 1,
-    "answersOriginal": [
-      "an obligation",
-      "a strong deduction",
-      "a permission",
-      "a past habit"
-    ],
-    "explanation": "Avec un sujet animé et un adjectif décrivant un état, “must” exprime ici une déduction forte : tu dois être épuisé."
-  },
-  {
-    "id": "m2",
-    "category": "modals",
-    "label": "Modaux",
-    "question": "Choose the most appropriate form: “You ___ have told me earlier; I could have helped.”",
-    "answers": [
-      "should",
-      "must",
-      "can",
-      "may"
-    ],
-    "correct": 0,
-    "answersOriginal": [
-      "should",
-      "must",
-      "can",
-      "may"
-    ],
-    "explanation": "“Should have + participe passé” exprime ici un reproche ou un regret concernant une action passée non réalisée."
-  },
-  {
-    "id": "a1",
-    "category": "articles",
-    "label": "Articles",
-    "question": "Choose the correct article: “She plays ___ piano.”",
-    "answers": [
-      "a",
-      "the",
-      "an",
-      "no article"
-    ],
-    "correct": 1,
-    "answersOriginal": [
-      "a",
-      "the",
-      "an",
-      "no article"
-    ],
-    "explanation": "En anglais, les instruments de musique sont généralement précédés de “the” après le verbe “play”."
-  },
-  {
-    "id": "a2",
-    "category": "articles",
-    "label": "Articles",
-    "question": "Choose the correct option: “___ information you gave me was useful.”",
-    "answers": [
-      "A",
-      "An",
-      "The",
-      "No article"
-    ],
-    "correct": 2,
-    "answersOriginal": [
-      "A",
-      "An",
-      "The",
-      "No article"
-    ],
-    "explanation": "“Information” est indénombrable en anglais. Ici, le groupe est défini par la relative “you gave me”, d'où “the”."
-  },
-  {
-    "id": "p1",
-    "category": "prepositions",
-    "label": "Prépositions",
-    "question": "Choose the correct preposition: “She is interested ___ linguistics.”",
-    "answers": [
-      "on",
-      "at",
-      "in",
-      "for"
-    ],
-    "correct": 2,
-    "answersOriginal": [
-      "on",
-      "at",
-      "in",
-      "for"
-    ],
-    "explanation": "La construction idiomatique est “to be interested in something”."
-  },
-  {
-    "id": "p2",
-    "category": "prepositions",
-    "label": "Prépositions",
-    "question": "Choose the correct preposition: “He insisted ___ paying for dinner.”",
-    "answers": [
-      "to",
-      "on",
-      "for",
-      "about"
-    ],
-    "correct": 1,
-    "answersOriginal": [
-      "to",
-      "on",
-      "for",
-      "about"
-    ],
-    "explanation": "On emploie “insist on” suivi d'un nom ou d'un verbe en -ing."
-  },
-  {
-    "id": "f1",
-    "category": "false-friends",
-    "label": "Faux amis",
-    "question": "In the sentence “I eventually found my keys”, “eventually” means:",
-    "answers": [
-      "éventuellement",
-      "finalement",
-      "actuellement",
-      "fréquemment"
-    ],
-    "correct": 1,
-    "answersOriginal": [
-      "éventuellement",
-      "finalement",
-      "actuellement",
-      "fréquemment"
-    ],
-    "explanation": "“Eventually” signifie “finalement” ou “à terme”, et non “éventuellement”."
-  },
-  {
-    "id": "f2",
-    "category": "false-friends",
-    "label": "Faux amis",
-    "question": "In “The issue is quite sensible”, “sensible” means:",
-    "answers": [
-      "sensible, émotif",
-      "raisonnable, sensé",
-      "sensitive au toucher",
-      "sensationnel"
-    ],
-    "correct": 1,
-    "answersOriginal": [
-      "sensible, émotif",
-      "raisonnable, sensé",
-      "sensitive au toucher",
-      "sensationnel"
-    ],
-    "explanation": "L'anglais “sensible” signifie “raisonnable” ou “sensé”. Le français “sensible” se traduit souvent par “sensitive”."
-  }
-]
+{
+  "categories": [
+    {
+      "id": "explicitation",
+      "name": "L'explicitation / l'étoffement",
+      "definition": "L'explicitation consiste à rendre explicite dans la traduction une information qui reste implicite dans le texte source, mais qui peut être déduite du contexte. Elle permet de clarifier le sens pour le lecteur français, en ajoutant un élément qui n'est pas formulé directement en anglais. Elle peut notamment prendre la forme d'un ajout lexical ou du développement d'une expression concise.",
+      "example_en": "A woman in a blue coat",
+      "example_fr": "Une femme vêtue d'un manteau bleu.",
+      "explanation": "Le participe passé « vêtue » correspond à un étoffement de la préposition « in »."
+    },
+    {
+      "id": "modulation",
+      "name": "La modulation",
+      "definition": "La modulation consiste à changer le point de vue ou la manière d'exprimer une idée, tout en conservant le même sens. Le traducteur ne reproduit pas nécessairement la formulation anglaise, mais adopte une perspective plus naturelle en français. Ce changement peut concerner, par exemple, la cause et la conséquence, le positif et le négatif, le concret et l'abstrait, ou encore le point de vue adopté.",
+      "example_en": "It is not difficult to show…",
+      "example_fr": "Il est facile de démontrer…",
+      "explanation": "La situation est envisagée en français de manière positive (« facile »), au contraire de l'anglais (« not difficult »)."
+    },
+    {
+      "id": "transposition",
+      "name": "La transposition",
+      "definition": "La transposition consiste à remplacer une catégorie grammaticale par une autre sans modifier le sens fondamental de l'énoncé. Un verbe en anglais peut ainsi devenir un nom en français, un adjectif peut être traduit par un adverbe, ou une proposition peut être rendue par un groupe nominal. Ce procédé permet d'obtenir une formulation plus idiomatique et plus naturelle dans la langue cible.",
+      "example_en": "After he comes back…",
+      "example_fr": "Après son retour…",
+      "explanation": "Le syntagme verbal « comes back » a été remplacé par un syntagme nominal « son retour »."
+    },
+    {
+      "id": "chasse-croise",
+      "name": "Le chassé-croisé",
+      "definition": "Le chassé-croisé est un procédé de traduction qui consiste à modifier simultanément la catégorie grammaticale et la répartition du sens entre plusieurs éléments de la phrase. Il apparaît notamment dans les expressions de mouvement : un verbe anglais exprimant la manière du déplacement devient un complément en français, tandis que la direction, exprimée par une préposition ou une particule en anglais, est intégrée au verbe français. Il s'agit donc d'une double transposition.",
+      "example_en": "He swam across the river.",
+      "example_fr": "Il a traversé la rivière à la nage.",
+      "explanation": "Le verbe « a traversé » traduit la direction donnée par la préposition « across ». Le verbe « swam » est traduit par le syntagme prépositionnel « à la nage »."
+    }
+  ],
+  "questions": [
+    {
+      "id": "explicitation-01",
+      "category": "explicitation",
+      "english": "The man spoke.",
+      "french": "L'homme prit la parole.",
+      "correct": "explicitation",
+      "explanation": "Dans cet exemple, le procédé attendu est : L'explicitation / l'étoffement. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "explicitation-02",
+      "category": "explicitation",
+      "english": "A woman in a black dress",
+      "french": "Une femme vêtue d'une robe noire.",
+      "correct": "explicitation",
+      "explanation": "Dans cet exemple, le procédé attendu est : L'explicitation / l'étoffement. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "explicitation-03",
+      "category": "explicitation",
+      "english": "A woman of great courage",
+      "french": "Une femme qui fait preuve d'un grand courage.",
+      "correct": "explicitation",
+      "explanation": "Dans cet exemple, le procédé attendu est : L'explicitation / l'étoffement. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "explicitation-04",
+      "category": "explicitation",
+      "english": "A matter of great importance",
+      "french": "Une question qui revêt une grande importance.",
+      "correct": "explicitation",
+      "explanation": "Dans cet exemple, le procédé attendu est : L'explicitation / l'étoffement. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "explicitation-05",
+      "category": "explicitation",
+      "english": "A look of disappointment",
+      "french": "Un regard qui exprimait la déception.",
+      "correct": "explicitation",
+      "explanation": "Dans cet exemple, le procédé attendu est : L'explicitation / l'étoffement. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "explicitation-06",
+      "category": "explicitation",
+      "english": "A voice full of anger",
+      "french": "Une voix qui trahissait une grande colère.",
+      "correct": "explicitation",
+      "explanation": "Dans cet exemple, le procédé attendu est : L'explicitation / l'étoffement. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "explicitation-07",
+      "category": "explicitation",
+      "english": "She looked at him with surprise.",
+      "french": "Elle le regarda, visiblement surprise.",
+      "correct": "explicitation",
+      "explanation": "Dans cet exemple, le procédé attendu est : L'explicitation / l'étoffement. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "explicitation-08",
+      "category": "explicitation",
+      "english": "He stopped at the desk for his mail.",
+      "french": "Il s'arrêta au bureau pour prendre son courrier.",
+      "correct": "explicitation",
+      "explanation": "Dans cet exemple, le procédé attendu est : L'explicitation / l'étoffement. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "explicitation-09",
+      "category": "explicitation",
+      "english": "They insisted on drinks.",
+      "french": "Ils insistèrent pour prendre un apéritif.",
+      "correct": "explicitation",
+      "explanation": "Dans cet exemple, le procédé attendu est : L'explicitation / l'étoffement. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "explicitation-10",
+      "category": "explicitation",
+      "english": "She had difficulty with the question.",
+      "french": "Elle eut du mal à répondre à la question.",
+      "correct": "explicitation",
+      "explanation": "Dans cet exemple, le procédé attendu est : L'explicitation / l'étoffement. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "explicitation-11",
+      "category": "explicitation",
+      "english": "She stood by the door, in a long coat.",
+      "french": "Elle se tenait près de la porte, enveloppée dans un long manteau.",
+      "correct": "explicitation",
+      "explanation": "Dans cet exemple, le procédé attendu est : L'explicitation / l'étoffement. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "explicitation-12",
+      "category": "explicitation",
+      "english": "She lay on the sofa under a blanket.",
+      "french": "Elle était allongée sur le canapé, recouverte d'une couverture.",
+      "correct": "explicitation",
+      "explanation": "Dans cet exemple, le procédé attendu est : L'explicitation / l'étoffement. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "modulation-01",
+      "category": "modulation",
+      "english": "It is not difficult to show…",
+      "french": "Il est facile de démontrer…",
+      "correct": "modulation",
+      "explanation": "Dans cet exemple, le procédé attendu est : La modulation. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "modulation-02",
+      "category": "modulation",
+      "english": "She was the last person to arrive.",
+      "french": "Elle est arrivée après tout le monde.",
+      "correct": "modulation",
+      "explanation": "Dans cet exemple, le procédé attendu est : La modulation. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "modulation-03",
+      "category": "modulation",
+      "english": "Keep off the grass.",
+      "french": "Ne pas marcher sur la pelouse.",
+      "correct": "modulation",
+      "explanation": "Dans cet exemple, le procédé attendu est : La modulation. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "modulation-04",
+      "category": "modulation",
+      "english": "I don't blame you.",
+      "french": "Je te comprends.",
+      "correct": "modulation",
+      "explanation": "Dans cet exemple, le procédé attendu est : La modulation. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "modulation-05",
+      "category": "modulation",
+      "english": "I was told that he had left.",
+      "french": "On m'a dit qu'il était parti.",
+      "correct": "modulation",
+      "explanation": "Dans cet exemple, le procédé attendu est : La modulation. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "modulation-06",
+      "category": "modulation",
+      "english": "He was seen leaving the building.",
+      "french": "On l'a vu quitter le bâtiment.",
+      "correct": "modulation",
+      "explanation": "Dans cet exemple, le procédé attendu est : La modulation. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "modulation-07",
+      "category": "modulation",
+      "english": "The house was built in 1890.",
+      "french": "On a construit cette maison en 1890.",
+      "correct": "modulation",
+      "explanation": "Dans cet exemple, le procédé attendu est : La modulation. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "modulation-08",
+      "category": "modulation",
+      "english": "You are expected to arrive on time.",
+      "french": "On attend de vous que vous arriviez à l'heure.",
+      "correct": "modulation",
+      "explanation": "Dans cet exemple, le procédé attendu est : La modulation. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "modulation-09",
+      "category": "modulation",
+      "english": "She was offered a promotion.",
+      "french": "On lui a proposé une promotion.",
+      "correct": "modulation",
+      "explanation": "Dans cet exemple, le procédé attendu est : La modulation. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "modulation-10",
+      "category": "modulation",
+      "english": "The rumour was soon forgotten.",
+      "french": "Tout le monde eut bientôt oublié cette rumeur.",
+      "correct": "modulation",
+      "explanation": "Dans cet exemple, le procédé attendu est : La modulation. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "modulation-11",
+      "category": "modulation",
+      "english": "The room has not been cleaned.",
+      "french": "Personne n'a nettoyé la pièce.",
+      "correct": "modulation",
+      "explanation": "Dans cet exemple, le procédé attendu est : La modulation. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "modulation-12",
+      "category": "modulation",
+      "english": "The book is widely read.",
+      "french": "Beaucoup de gens lisent ce livre.",
+      "correct": "modulation",
+      "explanation": "Dans cet exemple, le procédé attendu est : La modulation. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "modulation-13",
+      "category": "modulation",
+      "english": "The proposal was rejected by committee members.",
+      "french": "Les membres du comité ont refusé la proposition.",
+      "correct": "modulation",
+      "explanation": "Dans cet exemple, le procédé attendu est : La modulation. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "modulation-14",
+      "category": "modulation",
+      "english": "The news shocked her.",
+      "french": "Elle fut bouleversée par la nouvelle.",
+      "correct": "modulation",
+      "explanation": "Dans cet exemple, le procédé attendu est : La modulation. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "modulation-15",
+      "category": "modulation",
+      "english": "He was too tired to speak.",
+      "french": "La fatigue l'empêchait de parler.",
+      "correct": "modulation",
+      "explanation": "Dans cet exemple, le procédé attendu est : La modulation. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "modulation-16",
+      "category": "modulation",
+      "english": "The noise woke me up.",
+      "french": "Je me réveillai à cause du bruit.",
+      "correct": "modulation",
+      "explanation": "Dans cet exemple, le procédé attendu est : La modulation. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "transposition-01",
+      "category": "transposition",
+      "english": "After he comes back…",
+      "french": "Après son retour…",
+      "correct": "transposition",
+      "explanation": "Dans cet exemple, le procédé attendu est : La transposition. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "transposition-02",
+      "category": "transposition",
+      "english": "He announced that he would return.",
+      "french": "Il annonça son retour.",
+      "correct": "transposition",
+      "explanation": "Dans cet exemple, le procédé attendu est : La transposition. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "transposition-03",
+      "category": "transposition",
+      "english": "When she woke up,",
+      "french": "À son réveil,",
+      "correct": "transposition",
+      "explanation": "Dans cet exemple, le procédé attendu est : La transposition. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "transposition-04",
+      "category": "transposition",
+      "english": "He burst into laughter.",
+      "french": "Il éclata de rire.",
+      "correct": "transposition",
+      "explanation": "Dans cet exemple, le procédé attendu est : La transposition. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "transposition-05",
+      "category": "transposition",
+      "english": "On his arrival,",
+      "french": "Lorsqu'il arriva,",
+      "correct": "transposition",
+      "explanation": "Dans cet exemple, le procédé attendu est : La transposition. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "transposition-06",
+      "category": "transposition",
+      "english": "He gave her a quick glance.",
+      "french": "Il la regarda rapidement.",
+      "correct": "transposition",
+      "explanation": "Dans cet exemple, le procédé attendu est : La transposition. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "transposition-07",
+      "category": "transposition",
+      "english": "She was a careful driver.",
+      "french": "Elle conduisait prudemment.",
+      "correct": "transposition",
+      "explanation": "Dans cet exemple, le procédé attendu est : La transposition. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "transposition-08",
+      "category": "transposition",
+      "english": "He made a sudden movement.",
+      "french": "Il bougea brusquement.",
+      "correct": "transposition",
+      "explanation": "Dans cet exemple, le procédé attendu est : La transposition. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "transposition-09",
+      "category": "transposition",
+      "english": "He was a fast runner.",
+      "french": "Il courait vite.",
+      "correct": "transposition",
+      "explanation": "Dans cet exemple, le procédé attendu est : La transposition. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "transposition-10",
+      "category": "transposition",
+      "english": "They were in agreement.",
+      "french": "Ils étaient d'accord.",
+      "correct": "transposition",
+      "explanation": "Dans cet exemple, le procédé attendu est : La transposition. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "transposition-11",
+      "category": "transposition",
+      "english": "He is a heavy smoker.",
+      "french": "Il fume beaucoup.",
+      "correct": "transposition",
+      "explanation": "Dans cet exemple, le procédé attendu est : La transposition. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "transposition-12",
+      "category": "transposition",
+      "english": "He gave her a smile.",
+      "french": "Il lui sourit.",
+      "correct": "transposition",
+      "explanation": "Dans cet exemple, le procédé attendu est : La transposition. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "transposition-13",
+      "category": "transposition",
+      "english": "They had a discussion about the proposal.",
+      "french": "Ils discutèrent de la proposition.",
+      "correct": "transposition",
+      "explanation": "Dans cet exemple, le procédé attendu est : La transposition. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "transposition-14",
+      "category": "transposition",
+      "english": "She gave him a warning.",
+      "french": "Elle l'avertit.",
+      "correct": "transposition",
+      "explanation": "Dans cet exemple, le procédé attendu est : La transposition. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "transposition-15",
+      "category": "transposition",
+      "english": "He made an attempt to escape.",
+      "french": "Il tenta de s'échapper.",
+      "correct": "transposition",
+      "explanation": "Dans cet exemple, le procédé attendu est : La transposition. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "chasse-croise-01",
+      "category": "chasse-croise",
+      "english": "He limped across the street.",
+      "french": "Il a traversé la rue en boitant.",
+      "correct": "chasse-croise",
+      "explanation": "Dans cet exemple, le procédé attendu est : Le chassé-croisé. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "chasse-croise-02",
+      "category": "chasse-croise",
+      "english": "He swam across the river.",
+      "french": "Il a traversé la rivière à la nage.",
+      "correct": "chasse-croise",
+      "explanation": "Dans cet exemple, le procédé attendu est : Le chassé-croisé. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "chasse-croise-03",
+      "category": "chasse-croise",
+      "english": "He crawled to the other side of the road.",
+      "french": "Il gagna l'autre côté de la route en rampant.",
+      "correct": "chasse-croise",
+      "explanation": "Dans cet exemple, le procédé attendu est : Le chassé-croisé. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "chasse-croise-04",
+      "category": "chasse-croise",
+      "english": "She ran out of the house.",
+      "french": "Elle sortit de la maison en courant.",
+      "correct": "chasse-croise",
+      "explanation": "Dans cet exemple, le procédé attendu est : Le chassé-croisé. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "chasse-croise-05",
+      "category": "chasse-croise",
+      "english": "He nodded agreement.",
+      "french": "Il donna son accord d'un signe de tête.",
+      "correct": "chasse-croise",
+      "explanation": "Dans cet exemple, le procédé attendu est : Le chassé-croisé. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "chasse-croise-06",
+      "category": "chasse-croise",
+      "english": "He walked past me.",
+      "french": "Il passa devant moi en marchant.",
+      "correct": "chasse-croise",
+      "explanation": "Dans cet exemple, le procédé attendu est : Le chassé-croisé. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "chasse-croise-07",
+      "category": "chasse-croise",
+      "english": "She danced out of the room.",
+      "french": "Elle sortit de la pièce en dansant.",
+      "correct": "chasse-croise",
+      "explanation": "Dans cet exemple, le procédé attendu est : Le chassé-croisé. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "chasse-croise-08",
+      "category": "chasse-croise",
+      "english": "She rushed downstairs.",
+      "french": "Elle descendit précipitamment l'escalier.",
+      "correct": "chasse-croise",
+      "explanation": "Dans cet exemple, le procédé attendu est : Le chassé-croisé. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "chasse-croise-09",
+      "category": "chasse-croise",
+      "english": "She walked away slowly.",
+      "french": "Elle s'éloigna lentement.",
+      "correct": "chasse-croise",
+      "explanation": "Dans cet exemple, le procédé attendu est : Le chassé-croisé. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "chasse-croise-10",
+      "category": "chasse-croise",
+      "english": "He stumbled into the kitchen.",
+      "french": "Il entra en titubant dans la cuisine.",
+      "correct": "chasse-croise",
+      "explanation": "Dans cet exemple, le procédé attendu est : Le chassé-croisé. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "chasse-croise-11",
+      "category": "chasse-croise",
+      "english": "She marched into the office.",
+      "french": "Elle entra dans le bureau d'un pas décidé.",
+      "correct": "chasse-croise",
+      "explanation": "Dans cet exemple, le procédé attendu est : Le chassé-croisé. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "chasse-croise-12",
+      "category": "chasse-croise",
+      "english": "The horse galloped across the open field.",
+      "french": "Le cheval traversa le champ au galop.",
+      "correct": "chasse-croise",
+      "explanation": "Dans cet exemple, le procédé attendu est : Le chassé-croisé. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "chasse-croise-13",
+      "category": "chasse-croise",
+      "english": "She hurried down the narrow street",
+      "french": "Elle dévala la ruelle étroite.",
+      "correct": "chasse-croise",
+      "explanation": "Dans cet exemple, le procédé attendu est : Le chassé-croisé. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "chasse-croise-14",
+      "category": "chasse-croise",
+      "english": "The exhausted hikers trudged slowly up the steep mountain path.",
+      "french": "Les randonneurs épuisés gravirent péniblement le sentier escarpé de la montagne.",
+      "correct": "chasse-croise",
+      "explanation": "Dans cet exemple, le procédé attendu est : Le chassé-croisé. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    },
+    {
+      "id": "chasse-croise-15",
+      "category": "chasse-croise",
+      "english": "The bird hopped into the room.",
+      "french": "L'oiseau entra dans la pièce en sautillant.",
+      "correct": "chasse-croise",
+      "explanation": "Dans cet exemple, le procédé attendu est : Le chassé-croisé. Référez-vous à la définition et observez la transformation entre la phrase anglaise et sa traduction française."
+    }
+  ]
+}
